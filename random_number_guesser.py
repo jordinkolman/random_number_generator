@@ -28,6 +28,7 @@ def random_game():
                 user_tries = user_tries + 1
                 print("Congratulations! You have guessed correctly. It took you", user_tries, "tries.")
                 play_again = input("Would you like to play again? (y/n): ").lower()
+                random_number = random.randint(1,20)
             elif user_guess < random_number:
                 print("Your guess was too low. Try again!")
                 user_tries = user_tries + 1
